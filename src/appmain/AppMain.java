@@ -96,8 +96,8 @@ public class AppMain {
             String accNum = inAccNum + getSpaces(24 - inAccNum.length());
             String partner = parts[3].length() > 32 ? parts[3].substring(0, 32) : parts[3] + getSpaces(32 - parts[3].length());
             String default4 = "0000";
-            String defaultAccNum = "7320018911020260        ";
-            String defaultPartner = "V.M.KERESK.ÉS IP.KAMARA         ";
+            String defaultAccNum = "****************        ";
+            String defaultPartner = "********************************";
             String date = (parts[0].trim().equals("") || !parts[0].trim().matches("\\d{4}/\\d{2}/\\d{2}")) ? getSpaces(8) : parts[0].replace("/", "");
             String inAmount = parts[1].substring(1) + ".00";
             String amount = getSpaces(15 - inAmount.length()) + inAmount;
